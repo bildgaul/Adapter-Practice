@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Bears
 {
-    class BearAdapter
+    class BearAdapter : IToyBear
     {
-        
+        IBear bear;
+        public BearAdapter(IBear species)
+        {
+            bear = species;
+        }
+
+        public void Hug()
+        {
+            bear.Maul();
+        }
     }
 }

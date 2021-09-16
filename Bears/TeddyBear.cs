@@ -10,7 +10,7 @@ namespace Bears
     {
         public void Hug()
         {
-
+            Console.WriteLine("The teddy bear hugs you! How sweet!");
         }
     }
 }

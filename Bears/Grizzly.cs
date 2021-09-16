@@ -10,12 +10,12 @@ namespace Bears
     {
         public void Maul()
         {
-
+            Console.WriteLine("The bear mauls you!");
         }
 
         public void Hibernate()
         {
-
+            Console.WriteLine("The bear goes into hibernation.");
         }
     }
 }

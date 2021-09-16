@@ -10,7 +10,15 @@ namespace Bears
     {
         static void Main(string[] args)
         {
+            IBear bear = new Grizzly();
+            bear.Maul();
+            bear.Hibernate();
 
+            IToyBear toy = new TeddyBear();
+            toy.Hug();
+
+            IToyBear adapt = new BearAdapter(bear);
+            adapt.Hug();
         }
     }
 }
